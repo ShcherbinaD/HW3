@@ -1,0 +1,29 @@
+package task3Level2;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите четырехзначный номер билета");
+		int ticket=sc.nextInt();
+		int dig1=ticket%10000/1000;
+		int dig2=ticket%1000/100;
+		int dig3=ticket%100/10;
+		int dig4=ticket%10;
+		
+		int sum1=dig1+dig2;
+		int sum2=dig3+dig4;
+	
+		if (sum1==sum2||(sum1/10+sum1%10)==(sum2/10+sum2%10)) {
+			System.out.println("Счастливый билет");
+		
+		}else {
+			System.out.println("Билет не счастливый");
+		}
+			
+	}
+
+}
