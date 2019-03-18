@@ -1,0 +1,23 @@
+package task4Level1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите значение стороны А");
+		double sideA = sc.nextDouble();
+		System.out.println("Введите значение стороны B");
+		double sideB = sc.nextDouble();
+		System.out.println("Введите значение стороны C");
+		double sideC = sc.nextDouble();
+		if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+			System.out.println("Треугольник существует");
+		} else {
+			System.out.println("Треугольник не существует");
+		}
+	}
+
+}
