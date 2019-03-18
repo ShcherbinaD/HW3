@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Введите первое число");
 		int a = sc.nextInt();
@@ -17,13 +16,13 @@ public class Main {
 		int d = sc.nextInt();
 
 		int f = a;
-		if (b > a) {
+		if (b > f) {
 			f = b;
 		}
-		if (c > b) {
+		if (c > f) {
 			f = c;
 		}
-		if (d > c) {
+		if (d > f) {
 			f = d;
 		}
 		System.out.println("Самое большое число " + f);
