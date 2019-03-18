@@ -1,0 +1,28 @@
+package task4level2;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите шестизначное число");
+		int numb=sc.nextInt();
+		int n1=numb/100000;
+		int n2=numb%100000/10000;
+		int n3=numb%10000/1000;
+		int n4=numb%1000/100;
+		int n5=numb%100/10;
+		int n6=numb%10;
+		
+		if (n1==n6&&n2==n5&&n3==n4) {
+			System.out.println("Число является палиндромом");
+		}else {
+			System.out.println("Число не является палиндромом");
+		}
+			
+			
+	}
+
+}
