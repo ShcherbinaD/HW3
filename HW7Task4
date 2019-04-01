@@ -1,0 +1,15 @@
+package HW7Task4;
+
+import java.util.Formatter;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			for (int j=2;j<12;j++) {
+			String p=String.format("%."+j+ "f",Math.PI);
+			System.out.println(p);
+			}
+		}
+	}
+
