@@ -1,0 +1,19 @@
+package HW7Task1;
+
+
+import java.util.Calendar;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Calendar cl1=Calendar.getInstance();
+		long day1=cl1.getTimeInMillis();
+		
+		Calendar cl2=Calendar.getInstance();
+		cl2.add (Calendar.MONTH, -1);
+				
+		long day2=cl2.getTimeInMillis();
+		System.out.println(day1-day2);
+	}
+
+}
