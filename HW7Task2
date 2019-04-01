@@ -1,0 +1,25 @@
+package HW7Task2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] a= new int[] {6,2,-1,4,56,14,3,0};
+		array (a);
+}
+	
+			 public static void array (int []b) {
+				 for(int i=0;i<b.length;i++) {
+						if (i==0) {
+							System.out.print("["+b[i]+", ");
+						}else if(i==(b.length-1)){
+							System.out.print(b[i]+"]");
+						}else {
+							System.out.print(b[i] + ", ");
+		
+			
+		}
+			
+}
+}
+}
