@@ -1,0 +1,32 @@
+package HW8Task1;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner (System.in);
+		Scanner sc1=new Scanner (System.in);
+		System.out.println("Enter text");
+		String text = sc.nextLine();
+		System.out.println("Do you want to save your text? 1-save,2-not save");
+		int answer = sc.nextInt();
+		if (answer == 1) {
+			System.out.println("Enter file name");
+			String fileName=sc1.nextLine();
+			try (PrintWriter pw = new PrintWriter(fileName + ".txt")) {
+				pw.println(text);
+			}catch (IOException e) {
+				}
+			System.out.println("Your text is saved");
+			} else if (answer==2) {
+			System.out.println("Your text is not saved");
+			}else {
+			System.out.println("Incorrect");
+		}
+		
+}
+}
